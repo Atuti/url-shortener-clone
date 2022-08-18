@@ -1,4 +1,4 @@
-package org.mokaya;
+package org.mokaya.resource;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -12,7 +12,7 @@ import javax.ws.rs.core.Response;
 @Path("/api")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
-public interface UriShortenerApi {
+public interface UrlShortenerApi {
     
     @GET
     @Path("/{alias}")

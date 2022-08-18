@@ -1,4 +1,4 @@
-package org.mokaya;
+package org.mokaya.entity;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;

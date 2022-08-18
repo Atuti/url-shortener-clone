@@ -1,19 +1,12 @@
-package org.mokaya;
+package org.mokaya.resource;
 
 import java.net.URI;
 
-public class UrlShortener {
+public class UrlShortenerDTO {
+
     private String alias;
 
     private URI url;
-
-    public UrlShortener() {
-    }
-
-    public UrlShortener(String alias, URI url) {
-        this.alias = alias;
-        this.url = url;
-    }
 
     public String getAlias() {
         return alias;
@@ -31,5 +24,11 @@ public class UrlShortener {
         this.url = url;
     }
 
-    
+    public UrlShortenerDTO(String alias, URI url) {
+        this.alias = alias;
+        this.url = url;
+    }
+
+    public UrlShortenerDTO() {
+    }
 }

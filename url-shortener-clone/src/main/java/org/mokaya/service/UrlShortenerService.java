@@ -1,4 +1,4 @@
-package org.mokaya;
+package org.mokaya.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,6 +7,8 @@ import java.util.Optional;
 import javax.inject.Singleton;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
+import org.mokaya.entity.UrlShortener;
+import org.mokaya.exception.UrlShortenerException;
 
 @Singleton
 public class UrlShortenerService {
@@ -16,7 +18,7 @@ public class UrlShortenerService {
     @ConfigProperty(name = "exception.message.url_not_created")
     public String URL_NOT_CREATED;
 
-    @ConfigProperty(name = "exception.message.alias_already_exist")
+    @ConfigProperty(name = "exception.message.alias_already_exists")
     public String ALIAS_ALREADY_EXIST;
 
     @ConfigProperty(name = "exception.message.alias_null")

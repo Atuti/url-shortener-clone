@@ -1,4 +1,4 @@
-package org.mokaya;
+package org.mokaya.exception;
 
 public class UrlShortenerException extends RuntimeException{
 

@@ -1,4 +1,4 @@
-package org.mokaya;
+package org.mokaya.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -18,7 +18,8 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-
+import org.mokaya.entity.UrlShortener;
+import org.mokaya.exception.UrlShortenerException;
 
 import io.quarkus.test.junit.QuarkusTest;
 
